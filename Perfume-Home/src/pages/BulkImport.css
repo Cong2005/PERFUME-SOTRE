@@ -1,0 +1,122 @@
+.bulk-import-container {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* --- Khu nút thao tác đầu trang --- */
+.import-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+  gap: 12px;
+}
+
+.import-btn {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #adb5bd;
+  background: #e9ecef;
+  color: #000;
+  cursor: pointer;
+  font-size: 15px;
+  text-align: center;
+}
+.import-btn:hover {
+  background: #dde2e6;
+}
+
+/* --- Bảng dữ liệu --- */
+.import-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.import-table th {
+  background: #4c6ef5;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+.import-table td {
+  border-bottom: 1px solid #eee;
+  padding: 8px;
+}
+
+.import-table tr:hover {
+  background: #f8f9fa;
+}
+
+/* --- Nút hành động trong bảng --- */
+.table-actions button {
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-edit {
+  background: #4c6ef5;
+  color: white;
+}
+.btn-edit:hover { background: #3b5bdb; }
+
+.btn-delete {
+  background: #e03131;
+  color: white;
+}
+.btn-delete:hover { background: #c92a2a; }
+
+/* --- Modal chỉnh sửa --- */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.35);
+  display: grid;
+  place-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  width: min(500px, 92vw);
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  display: grid;
+  gap: 10px;
+}
+
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.btn-close, .btn-save {
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-close { background: #adb5bd; color: white; }
+.btn-close:hover { background: #868e96; }
+
+.btn-save { background: #4c6ef5; color: white; }
+.btn-save:hover { background: #3b5bdb; }

@@ -1,0 +1,113 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, #d7ccc8, #efebe9, #bcaaa4);
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0; 
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(120deg, #d7ccc8, #efebe9, #bcaaa4);
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.login-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.login-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 24px;
+  text-align: center;
+  width: 100%;
+  margin-right: -200px;
+}
+
+.login-form {
+  background: #fff;
+  padding: 35px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin-right: -200px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-row label {
+  font-weight: 600;
+  color: #333;
+}
+
+.form-row input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.register {
+  margin-top: 10px;
+  background-color: #28a745;
+}
+
+.register:hover {
+  background-color: #218838;
+}
+
+.logo-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.haui-logo {
+  width: 470px;
+  height: auto;
+  border-radius: 12px;
+  border: 4px solid #ffc107;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 15px;
+  margin-left: -200px;
+}
